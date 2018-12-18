@@ -16,4 +16,9 @@ By default the add-on hides all possibly annoying or distracting elements. To ch
 
 ## Permanent installation
 
-todo
+1. Open `about:addons`
+2. Click on the settings gear
+3. Choose *Install add-on from file ...*
+4. Choose the `.xpi` file you downloaded from this repository
+5. Confirm that you understand that this add-on will require access to browser storage by clicking *Add*
+6. Click *OK*
