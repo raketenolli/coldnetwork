@@ -5,6 +5,7 @@ function saveOptions(e) {
         meta: document.getElementById("meta").checked,
         newsletter: document.getElementById("newsletter").checked,
         chat: document.getElementById("chat").checked,
+        sidebarWidgets: document.getElementById("sidebarWidgets").checked,
         related: document.getElementById("related").checked,
         linked: document.getElementById("linked").checked
     });
@@ -18,6 +19,7 @@ function restoreOptions() {
     let meta = browser.storage.sync.get("meta");
     let newsletter = browser.storage.sync.get("newsletter");
     let chat = browser.storage.sync.get("chat");
+    let sidebarWidgets = browser.storage.sync.get("sidebarWidgets");
     let related = browser.storage.sync.get("related");
     let linked = browser.storage.sync.get("linked");
     hot.then((res) => { document.getElementById("hot").checked = res.hot ? true : false })
@@ -25,6 +27,7 @@ function restoreOptions() {
     meta.then((res) => { document.getElementById("meta").checked = res.meta ? true : false })
     newsletter.then((res) => { document.getElementById("newsletter").checked = res.newsletter ? true : false })
     chat.then((res) => { document.getElementById("chat").checked = res.chat ? true : false })
+    sidebarWidgets.then((res) => { document.getElementById("sidebarWidget").checked = res.sidebarWidgets ? true : false })
     related.then((res) => { document.getElementById("related").checked = res.related ? true : false })
     linked.then((res) => { document.getElementById("linked").checked = res.linked ? true : false })
 }

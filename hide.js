@@ -4,6 +4,7 @@ var hideSettings = {
     "meta": true,
     "newsletter": true,
     "chat": true,
+    "sidebarWidgets": true,
     "related": true,
     "linked": true
 }
@@ -14,6 +15,7 @@ const hideSelectors = {
     "meta": ["div.community-bulletin"],
     "newsletter": ["div#newsletter-ad"],
     "chat": ["div#chat-feature"],
+    "sidebarWidgets": ["div.s-sidebarwidget"],
     "related": ["div.sidebar-related"],
     "linked": ["div.sidebar-linked"]
 }

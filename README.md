@@ -1,6 +1,16 @@
 # coldnetwork
 Hides annoying or distracting elements like job offers or hot network questions from sidebar on stackoverflow.com sites
 
+## Create a signed .xpi file
+
+1. Create a ZIP file from
+   - the `icons` folder and
+   - the files `hide.js`, `manifest.json`, `options.html` and `options.js`
+2. Login to https://addons.mozilla.org
+3. My Add-ons > Upload a new add-on
+4. Follow the instructions, upload the ZIP file you just created
+5. Once you get the notification that the add-on is signed and ready to download, do so
+
 ## Temporary installation
 
 1. Open `about:debugging`
